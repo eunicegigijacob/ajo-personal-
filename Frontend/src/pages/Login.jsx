@@ -1,7 +1,7 @@
 import styles from '../styles/Login.module.css';
 
 import loginImg from '../assets/Login avatar2.png';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 
 const Login = () => {
   return (
