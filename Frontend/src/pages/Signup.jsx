@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import signupImg from '../assets/Signup2.png';
 
 import styles from '../styles/Signup.module.css';
