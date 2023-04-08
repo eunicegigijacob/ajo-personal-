@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+.heroSection {
+    margin-top: 65px;
+    width: 1240px;
+    height: 894px;
+}
+
+.heroText {
+    width: 760px;
+    height: 361px;
+    margin: 0 auto;
+
+}
+
+.largeText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    width: 740px;
+    /* height: 153px; */
+    margin: 0;
+}
+
+.smallText {
+    width: 650px;
+    /* height: 15px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #6E7191;
+    letter-spacing: 0.3px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactBtn {
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: block;
+    color: #FFFFFF;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #2A5C99;
+    border: 1px solid #2A5C99;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contactBtn:hover {
+    color: rgb(16, 13, 13);
+}
+
+.heroImg {
+    background: url('../assets/Dashboard.png');
+    width: 900px;
+    height: 467px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-size: contain;
+    border: 7px solid #2A5C99;
+    border-bottom: none;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.footerSection {
+    height: 430px;
+    background: #2A5C99;
+    width: 100%;
+}
+
+
+.flexContainer {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    color: #fff;
+}
+
+.logo {
+    width: 126px;
+    height: 63px;
+}
+
+.firstGridSection {
+    padding-left: 30px;
+}
+
+.list {
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linktext {
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.linkHeadingText {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.subscribeText {
+    width: 213px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.form {
+    box-sizing: border-box;
+    width: 332px;
+    height: 56px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.formInput {
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.formInput::placeholder {
+    color: #fff;
+}
+
+.subscribeBtn {
+    margin-right: 0;
+    width: 36.7%;
+    height: 100%;
+    background-color: #FFFF;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    color: #4E4B66;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.bottomText {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin-top: 8%;
+    margin-left: 30%;
+    color: #fff;
+}
