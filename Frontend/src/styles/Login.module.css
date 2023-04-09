@@ -10,6 +10,10 @@
     background: #2A5C99;
 }
 
+.padding {
+    padding: 1px;
+}
+
 .container {
     display: flex;
     justify-content: center;

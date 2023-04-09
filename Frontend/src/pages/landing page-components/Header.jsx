@@ -1,4 +1,4 @@
-// import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 import styles from '../../styles/Header.module.css';
 
@@ -35,20 +35,12 @@ const Header = () => {
         </ul>
       </div>
       <div className={styles.button}>
-        <button
-          id="signin-btn"
-          className={styles.signinLinks}
-          // onClick={HandleLogin}
-        >
+        <NavLink to="/signup" id="signin-btn" className={styles.signinLinks}>
           Sign In
-        </button>
-        <button
-          id="signup-btn"
-          className={styles.signupLinks}
-          // onClick={HandleSignup}
-        >
+        </NavLink>
+        <NavLink to="/login" id="signup-btn" className={styles.signupLinks}>
           Get Started
-        </button>
+        </NavLink>
       </div>
     </header>
   );

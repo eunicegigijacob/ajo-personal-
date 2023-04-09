@@ -12,7 +12,7 @@ const HeroSection = () => {
           Whether you’re in need of capital to bring that business idea to life
           or you want to save up towards a secure future, Ajo is here to help.
         </p>
-        <a href="#contact-section" className={styles.contactBtn}>
+        <a href="#contact" className={styles.contactBtn}>
           Contact us
         </a>
       </div>
