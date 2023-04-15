@@ -9,12 +9,31 @@
     width: 100%;
 }
 
+.logo {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    width: 4%;
+    color: #4E4B66;
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    gap: 20px;
+}
 
 .list {
-    margin-left: auto;
+    align-self: center;
+    margin: 0 auto;
     display: flex;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     list-style: none;
     color: #4E4B66;
 }
@@ -34,7 +53,7 @@
 }
 
 .signupLinks {
-    padding: 12px 22px;
+    padding: 1vw 1.8vw;
     border-radius: 8px;
     margin-left: 16px;
     align-self: center;
@@ -52,7 +71,7 @@
 }
 
 .signinLinks {
-    padding: 12px 30px;
+    padding: 1vw 2.3vw;
     border-radius: 8px;
     margin-left: 16px;
     align-self: center;
@@ -68,4 +87,85 @@
 .signinLinks:hover {
     color: #FFFFFF;
     background-color: #2A5C99;
+}
+
+
+@media screen and (max-width: 830px) {
+
+    .menu {
+        display: initial;
+        position: fixed;
+        top: 1vh;
+        right: 0;
+        color: #FFFFFF;
+        background: #2A5C99;
+    }
+
+    .navlinks {
+        /* display: none; */
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 93vh;
+        background: #2A5C99;
+        color: #FFFFFF;
+        transform: translateX(100%);
+    }
+
+    .links {
+        color: #FFFFFF;
+        padding-left: 10px;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .links:hover {
+        color: #FFFFFF;
+        text-decoration: 1px #FFFFFF solid underline;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .signinLinks,
+    .signupLinks {
+        margin: 0;
+        margin-top: 14px;
+        align-self: flex-start;
+        padding: 0;
+        border-radius: 0;
+        background-color: inherit;
+        color: #FFFFFF;
+        padding-left: 10px;
+    }
+
+    .signinLinks:hover,
+    .signupLinks:hover {
+        color: #FFFFFF;
+        text-decoration: 1px #FFFFFF solid underline;
+    }
+
+
+}
+
+
+.nav_mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 93vh;
+    background: #2A5C99;
+    color: #FFFFFF;
+    transform: translateX(0);
+    transition: 0.5s ease-in;
 }
