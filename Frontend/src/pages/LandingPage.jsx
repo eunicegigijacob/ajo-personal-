@@ -9,7 +9,7 @@ import Offers from './landing page-components/Offers';
 const LandingPage = () => {
   return (
     <div className="section">
-      <div className="hero-section">
+      <div>
         <Header />
         <HeroSection />
         <About />
