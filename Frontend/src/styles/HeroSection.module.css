@@ -70,3 +70,9 @@
     border: 7px solid #2A5C99;
     border-bottom: none;
 }
+
+@media screen and (max-width: 950px) {
+    .heroImg {
+        width: 83%;
+    }
+}
