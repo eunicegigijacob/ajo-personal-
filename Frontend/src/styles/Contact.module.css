@@ -85,7 +85,7 @@
 }
 
 .lowerText {
-    margin-top: 16px;
+    margin-top: 30px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -104,3 +104,5 @@
     line-height: 120%;
     text-align: left;
 }
+
+@media screen and (max-widith: 1100px) {}
