@@ -18,7 +18,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 290%;
     line-height: 120%;
     text-align: center;
     width: 740px;
@@ -75,4 +75,14 @@
     .heroImg {
         width: 83%;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .heroImg {
+        width: 70%;
+    }
+
+    /* .largeText {
+        font-size: 70%;
+    } */
 }
