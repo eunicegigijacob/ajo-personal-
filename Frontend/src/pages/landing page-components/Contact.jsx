@@ -12,7 +12,7 @@ const Contact = () => {
             Our ever ready customer care service is available to answer your
             questions
           </p>
-          <p className={styles.lowerText}>Send us an email at</p>
+          <p className={styles.lowerText}>Send us an email at :</p>
           <p className={styles.contactParagraphText}>
             <span>
               <EnvelopeIcon className={styles.icon} />
