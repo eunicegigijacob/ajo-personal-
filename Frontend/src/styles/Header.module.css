@@ -93,12 +93,12 @@
 @media screen and (max-width: 830px) {
 
     .menu {
-        display: initial;
-        position: fixed;
+        display: block;
+        /* position: fixed;
         top: 1vh;
-        right: 0;
-        color: #FFFFFF;
-        background: #2A5C99;
+        right: 0; */
+        color: #2A5C99;
+        /* background: #2A5C99; */
     }
 
     .navlinks {
@@ -168,4 +168,13 @@
     color: #FFFFFF;
     transform: translateX(0);
     transition: 0.5s ease-in;
+}
+
+.nav_menu {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFFFFF;
+    /* z-index: 10000; */
 }

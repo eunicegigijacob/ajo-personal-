@@ -4,17 +4,23 @@ import styles from '../../styles/Header.module.css';
 
 import Logo from '../../assets/Logo.png';
 
-import { Bars3Icon } from '@heroicons/react/20/solid';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nav, setNav] = useState(styles.navlinks);
+  const [isopenMenu, setIsOpenMenu] = useState('');
 
   const handleToggle = () => {
+    setIsOpenMenu(true);
     nav === styles.navlinks
       ? setNav(styles.nav_mobile)
       : setNav(styles.navlinks);
+  };
+
+  const handleClose = () => {
+    isopenMenu ? setNav(styles.navlinks) : '';
   };
 
   useEffect(() => {
@@ -65,6 +71,7 @@ const Header = () => {
         </div>
       </nav>
       <Bars3Icon className={styles.menu} onClick={handleToggle} />
+      <XMarkIcon className={styles.nav_menu} onClick={handleClose} />
     </header>
   );
 };
