@@ -23,12 +23,14 @@
 .sectionTwoWrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 
 
 .aboutImage {
     width: 45%;
+    height: auto;
 }
 
 .describeUs {
@@ -56,4 +58,25 @@
 .signupBtn:hover {
     color: #121111;
     border: 2px solid #5d8fdb;
+}
+
+@media screen and (max-width: 950px) {
+    .sectionTwoWrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .aboutImage {
+        width: 60vw;
+    }
+
+    .describeUs {
+        width: 100vw;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .AboutSection {
+        height: 900px;
+    }
 }
