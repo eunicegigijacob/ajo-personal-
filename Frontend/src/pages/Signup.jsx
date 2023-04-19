@@ -3,6 +3,8 @@ import signupImg from '../assets/Signup2.png';
 
 import styles from '../styles/Signup.module.css';
 
+import { NavLink } from 'react-router-dom';
+
 const Signup = () => {
   return (
     <div className={styles.body}>
@@ -57,72 +59,6 @@ const Signup = () => {
                 <div>
                   <span>Phone Number</span>
                   <div className={styles.bottom}>
-                    {/* <svg
-                    width="68"
-                    height="36"
-                    viewBox="0 0 68 36"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="0.25"
-                      y="5.395"
-                      width="35.5"
-                      height="25.2143"
-                      rx="1.75"
-                      fill="white"
-                      stroke="#F5F5F5"
-                      stroke-width="0.5"
-                    />
-                    <mask
-                      id="mask0_292_14191"
-                      style="mask-type:luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="5"
-                      width="36"
-                      height="26"
-                    >
-                      <rect
-                        x="0.25"
-                        y="5.395"
-                        width="35.5"
-                        height="25.2143"
-                        rx="1.75"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_292_14191)">
-                      <rect
-                        x="23.9999"
-                        y="5.145"
-                        width="12"
-                        height="25.7143"
-                        fill="#189B62"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0 30.8593H12V5.145H0V30.8593Z"
-                        fill="#189B62"
-                      />
-                    </g>
-                    <g clip-path="url(#clip0_292_14191)">
-                      <path d="M51 16L56 21L61 16H51Z" fill="black" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_292_14191">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(44 6)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg> */}
                     <input
                       type="text"
                       name="phonenumber"
@@ -168,11 +104,10 @@ const Signup = () => {
                   Create Account
                 </button>
                 <p className={styles.loginStatement}>
-                  Already have an account?{' '}
-                  <a href="./signin.html" className={styles.loginLink}>
-                    {' '}
-                    Log in{' '}
-                  </a>{' '}
+                  Already have an account?
+                  <NavLink to="/login" className={styles.loginLink}>
+                    Log in
+                  </NavLink>
                 </p>
               </div>
             </form>
