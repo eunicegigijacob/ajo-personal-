@@ -62,10 +62,10 @@ const Header = () => {
           </li>
         </ul>
         <div className={styles.button}>
-          <NavLink to="/signup" id="signin-btn" className={styles.signinLinks}>
+          <NavLink to="/login" id="signin-btn" className={styles.signinLinks}>
             Sign In
           </NavLink>
-          <NavLink to="/login" id="signup-btn" className={styles.signupLinks}>
+          <NavLink to="/signup" id="signup-btn" className={styles.signupLinks}>
             Get Started
           </NavLink>
         </div>
