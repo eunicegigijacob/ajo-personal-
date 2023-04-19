@@ -1,5 +1,5 @@
 import styles from '../../styles/HeroSection.module.css';
-// import Dashboard from '../../assets/Dashboard.png';
+import Dashboard from '../../assets/Dashboard.png';
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,9 @@ const HeroSection = () => {
           Contact us
         </a>
       </div>
-      <div className={styles.heroImg}></div>
+      <div className={styles.heroImgContainer}>
+        <img src={Dashboard} className={styles.heroImg} />
+      </div>
     </section>
   );
 };

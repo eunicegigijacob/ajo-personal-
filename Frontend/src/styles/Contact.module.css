@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 .contactSection {
     max-width: 100%;
     width: 100%;
@@ -60,11 +61,11 @@
 
     padding: 40px;
     margin-left: 5%;
-    max-width: 30%;
     width: 30%;
 }
 
-.contactParagraphText {
+.contactParagraphText1,
+.contactParagraphText2 {
     font-size: 20px;
     font-weight: 300;
     line-height: 28px;
@@ -74,6 +75,8 @@
     align-self: center;
     margin-top: 5px;
 }
+
+
 
 .line {
     width: 1px;
@@ -105,4 +108,85 @@
     text-align: left;
 }
 
-@media screen and (max-widith: 1100px) {}
+
+@media screen and (max-width: 800Px) {
+    .contactParagraphText1 {
+        line-height: normal;
+    }
+
+    .lowerText {
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width: 710px) {
+
+    .contactParagraphText1,
+    .contactParagraphText2 {
+        margin-top: 0;
+        /* margin-bottom: 8vh; */
+    }
+
+    .lowerText {
+        margin-top: 1vh;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .contactFlexContainer {
+        display: initial;
+
+    }
+
+    .rightHalf {
+        padding: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .leftHalf {
+        width: auto;
+        padding: 0;
+        margin-left: 14.5%;
+    }
+
+    .contactParagraphText2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1vh;
+    }
+}
+
+
+@media screen and (max-width: 555px) {
+    .contactParagraphText1 {
+        margin-bottom: 6vh;
+    }
+
+
+}
+
+@media screen and (max-width: 556px) {
+    .contactParagraphText1 {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .lowerText {
+        margin-top: 4vh;
+    }
+
+    .contactHeadingText {
+        margin-bottom: 30px;
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .contactParagraphText1 {
+        margin-bottom: 8vh;
+    }
+}

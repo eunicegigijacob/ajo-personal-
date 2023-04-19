@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
 .footerSection {
     height: 430px;
     background: #2A5C99;
@@ -62,14 +63,14 @@
 
 .form {
     box-sizing: border-box;
-    width: 332px;
+    width: 70%;
     height: 56px;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
 }
 
 .formInput {
-    width: 60%;
+    width: 56%;
     height: 100%;
     background-color: transparent;
     border: none;
@@ -87,7 +88,7 @@
 
 .subscribeBtn {
     margin-right: 0;
-    width: 36.7%;
+    width: 40.9%;
     height: 100%;
     background-color: #FFFF;
     border: none;
@@ -105,7 +106,91 @@
     font-size: 12px;
     font-weight: 400;
     font-family: 'Poppins';
-    margin-top: 8%;
-    margin-left: 30%;
+    margin-top: 10%;
+    /* margin-left: 30%; */
+    text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .formInput {
+        width: 55.5%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .subscribeBtn {
+        width: 40.4%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .formInput {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .formInput {
+        width: 54.5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bottomText {
+        margin-top: 20%;
+    }
+
+    .formInput {
+        width: 100%;
+    }
+
+    .subscribeBtn {
+        margin-top: 10px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .firstGridSection {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .flexContainer {
+        display: initial;
+    }
+
+    .footerSection {
+        height: fit-content;
+    }
+
+    .firstGridSection {
+        margin-bottom: 70px;
+        padding-left: 10px;
+    }
+
+    .formInput {
+        width: 56.5%;
+    }
+
+    .subscribeBtn {
+        width: 40%;
+        margin-top: 0;
+    }
+
+    .divs {
+        margin-bottom: 10px;
+        margin-left: 2px;
+    }
+
+    .linktext {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+
 }

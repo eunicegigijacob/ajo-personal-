@@ -24,7 +24,7 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div>
+        <div className={styles.divs}>
           <h4 className={styles.linkHeadingText}>Company</h4>
           <ul className={styles.list}>
             <li className={styles.linktext}>
@@ -49,7 +49,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={styles.divs}>
           <h4 className={styles.linkHeadingText}>Product</h4>
           <ul className={styles.list}>
             <li className={styles.linktext}>
@@ -69,7 +69,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={styles.divs}>
           <h4 className={styles.linkHeadingText}>Resources</h4>
           <ul className={styles.list}>
             <li className={styles.linktext}>

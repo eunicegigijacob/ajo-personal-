@@ -8,12 +8,12 @@ const Contact = () => {
       <h3 className={styles.contactHeadingText}>Have Any Question For Us?</h3>
       <div className={styles.contactFlexContainer}>
         <div className={styles.rightHalf}>
-          <p className={styles.contactParagraphText}>
+          <p className={styles.contactParagraphText1}>
             Our ever ready customer care service is available to answer your
             questions
           </p>
           <p className={styles.lowerText}>Send us an email at :</p>
-          <p className={styles.contactParagraphText}>
+          <p className={styles.contactParagraphText1}>
             <span>
               <EnvelopeIcon className={styles.icon} />
             </span>
@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
         <div className={styles.line}></div>
         <div className={styles.leftHalf}>
-          <p className={styles.contactParagraphText}>
+          <p className={styles.contactParagraphText2}>
             You can also give us a call via:
           </p>
           <p className={styles.call}>
