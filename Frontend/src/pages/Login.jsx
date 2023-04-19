@@ -2,6 +2,7 @@ import styles from '../styles/Login.module.css';
 
 import loginImg from '../assets/Login avatar2.png';
 import logo from '../assets/Logo.png';
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -66,11 +67,10 @@ const Login = () => {
                 value="Sign In"
               />
               <p className={styles.signinStatement}>
-                Dont have an account?{' '}
-                <a href="./signup.html" className={styles.signinStatementLink}>
-                  {' '}
-                  Sign up{' '}
-                </a>{' '}
+                Dont have an account?
+                <NavLink to="/signup" className={styles.signinStatementLink}>
+                  Sign Up
+                </NavLink>
               </p>
             </form>
           </div>
