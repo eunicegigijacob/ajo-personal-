@@ -53,12 +53,14 @@ const Login = () => {
                 </div>
 
                 <div className={styles.forgotPassword}>
-                  <p>
-                    <a href="./password.html" className={styles.special}>
-                      {' '}
-                      Forgot your password?
-                    </a>
-                  </p>
+                  <NavLink to="/forget-password">
+                    <p>
+                      <a href="./password.html" className={styles.special}>
+                        {' '}
+                        Forgot your password?
+                      </a>
+                    </p>
+                  </NavLink>
                 </div>
               </div>
               <input
