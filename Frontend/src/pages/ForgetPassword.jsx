@@ -1,8 +1,14 @@
 import styles from '../styles/ForgetPassword.module.css';
 import arrow from '../assets/arrow-left.png';
 import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const ForgotPassword = () => {
+  useEffect(() => {
+    document.body.style.background =
+      'linear-gradient(360deg, rgb(42, 92, 153) 0%, rgb(95, 37, 85) 100%)';
+    // alert(window.innerHeight);
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
