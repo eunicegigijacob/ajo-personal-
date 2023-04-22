@@ -110,6 +110,7 @@ form {
     color: #2A5C99;
     text-decoration: none;
     border-radius: 5px;
+    padding: 2px 5px;
 }
 
 .signinStatementLink:hover {

@@ -134,7 +134,9 @@
 .loginLink {
     border: 1px solid;
     color: #2A5C99;
-    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px 5px;
 }
 
 .formHeadingText {
