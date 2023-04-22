@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import ForgotPassword from './pages/ForgetPassword';
+import MailCheck from './pages/CheckMail';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
