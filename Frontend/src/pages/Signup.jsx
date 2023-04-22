@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from '../assets/Logo.png';
 import signupImg from '../assets/Signup2.png';
 
@@ -6,6 +7,18 @@ import styles from '../styles/Signup.module.css';
 import { NavLink } from 'react-router-dom';
 
 const Signup = () => {
+  const [firstname, setFirstname] = useState('');
+  const [lastname, setLastname] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [refCode, setRefCode] = useState('');
+  const [password, setPassword] = useState('');
+  const [ConfirmPassword, setConfirmPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={styles.body}>
       <div className={styles.padding}>
@@ -20,7 +33,11 @@ const Signup = () => {
             />
           </div>
           <div>
-            <form id="signup-form" className={styles.form}>
+            <form
+              id="signup-form"
+              className={styles.form}
+              onSubmit={handleSubmit}
+            >
               <h2 className={styles.formHeadingText}>Sign Up</h2>
               <div className={styles.inputDiv}>
                 <div className={styles.name}>
@@ -32,6 +49,8 @@ const Signup = () => {
                       id="firstname"
                       required
                       className={styles.input}
+                      value={firstname}
+                      onChange={(e) => setFirstname(e.target.value)}
                     />
                   </div>
                   <div className={styles.inputContainer}>
@@ -42,6 +61,8 @@ const Signup = () => {
                       id="lastname"
                       required
                       className={styles.input}
+                      value={lastname}
+                      onChange={(e) => setLastname(e.target.value)}
                     />
                   </div>
                 </div>
@@ -53,6 +74,8 @@ const Signup = () => {
                     required
                     id="email"
                     className={styles.input}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <p id="email-error"></p>
                 </div>
@@ -64,8 +87,10 @@ const Signup = () => {
                       name="phonenumber"
                       placeholder="+234"
                       required
-                      id="phone-no"
+                      id="phone"
                       className={styles.phoneContainerInput}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
                   <p id="phone-error"></p>
@@ -77,6 +102,8 @@ const Signup = () => {
                     name="invitecode"
                     id="invitecode"
                     className={styles.input}
+                    value={refCode}
+                    onChange={(e) => setRefCode(e.target.value)}
                   />
                 </div>
                 <div className={styles.inputContainer}>
@@ -87,6 +114,8 @@ const Signup = () => {
                     id="password"
                     required
                     className={styles.input}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div className={styles.inputContainer}>
@@ -97,6 +126,8 @@ const Signup = () => {
                     id="confirmpassword"
                     required
                     className={styles.input}
+                    value={ConfirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
                   />
                 </div>
 
@@ -106,7 +137,7 @@ const Signup = () => {
                 <p className={styles.loginStatement}>
                   Already have an account?
                   <NavLink to="/login" className={styles.loginLink}>
-                    Log in
+                    Sign In
                   </NavLink>
                 </p>
               </div>
