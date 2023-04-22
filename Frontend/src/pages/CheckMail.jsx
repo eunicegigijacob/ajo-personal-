@@ -6,7 +6,6 @@ import { useState } from 'react';
 const MailCheck = (props) => {
   const email = props.email;
   const handleResend = props.handleResend;
-  console.log(email, props);
 
   return (
     <div className={styles.body}>
