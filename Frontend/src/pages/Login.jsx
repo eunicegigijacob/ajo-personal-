@@ -3,8 +3,16 @@ import styles from '../styles/Login.module.css';
 import loginImg from '../assets/Login avatar2.png';
 import logo from '../assets/Logo.png';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={styles.body}>
       <div className={styles.padding}>
@@ -20,17 +28,18 @@ const Login = () => {
             />
           </div>
           <div>
-            <form className={styles.loginForm}>
+            <form className={styles.loginForm} onSubmit={handleSubmit}>
               <h2 className={styles.formHeadingText}>Login</h2>
               <div className={styles.input}>
                 <div className={styles.inputContainer}>
                   <span className={styles.top}>Email Address</span>
                   <input
                     type="emial"
-                    name="email"
+                    value={email}
                     className={styles.inputFields}
                     id="email"
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <p id="email-errors"></p>
                 </div>
@@ -39,9 +48,10 @@ const Login = () => {
                   <input
                     type="password"
                     id="password"
-                    name="password"
+                    value={password}
                     required
                     className={styles.inputFields}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                   <p id="password-errors"></p>
                 </div>
