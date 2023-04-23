@@ -1,4 +1,4 @@
-import '../styles/Home.css';
+import styles from '../styles/Home.module.css';
 
 import SideBar from '../Components/Home/SideBar';
 import Navbar from '../Components/Home/Navbar';

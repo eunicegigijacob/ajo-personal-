@@ -1,4 +1,4 @@
-import '../../styles/Sidebar.css';
+import syles from '../../styles/Sidebar.module.css';
 
 import logo from '../../assets/Logo.png';
 import Dasboardsvg from '../svg/dashboard';

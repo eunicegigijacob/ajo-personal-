@@ -1,4 +1,4 @@
-import '../../styles/Navbar.css';
+import styles from '../../styles/Navbar.module.css';
 import Searchicon from '../svg/search';
 
 import user from '../../assets/user.jpg';

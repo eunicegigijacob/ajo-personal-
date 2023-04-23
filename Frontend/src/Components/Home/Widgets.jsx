@@ -1,4 +1,4 @@
-import '../../styles/Widgets.css';
+import '../../styles/Widgets.module.css';
 import ArrowUpIcon from '../svg/arrowup';
 import ChartIcon from '../svg/chart';
 

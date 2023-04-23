@@ -1,4 +1,4 @@
-import '../../styles/Dashboard.css';
+import styles from '../../styles/Dashboard.module.css';
 import CloudIcon from '../svg/cloud';
 import PlusIcon from '../svg/plus';
 import Widgets from './Widgets';
@@ -22,9 +22,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="main">
-        <div className="left">
-          <Widgets />
-        </div>
+        <div className="left">{/* <Widgets /> */}</div>
         <div className="right">
           <p>Notificatons</p>
         </div>
