@@ -68,6 +68,9 @@ const Header = () => {
           <NavLink to="/signup" id="signup-btn" className={styles.signupLinks}>
             Get Started
           </NavLink>
+          <NavLink to="/home" id="signup-btn" className={styles.signupLinks}>
+            home
+          </NavLink>
         </div>
       </nav>
       <Bars3Icon className={styles.menu} onClick={handleToggle} />
