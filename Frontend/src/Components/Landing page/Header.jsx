@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src={Logo} alt="ajo logo" className="logo" />
+        <img src={Logo} alt="ajo logo" />
       </div>
       <nav className={nav}>
         <ul className={styles.list}>
