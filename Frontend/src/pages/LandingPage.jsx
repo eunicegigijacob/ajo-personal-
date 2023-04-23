@@ -1,10 +1,10 @@
-import About from './landing page-components/AboutSection';
-import Contact from './landing page-components/Contact';
-import FAQ from './landing page-components/FAQ';
-import Footer from './landing page-components/Footer';
-import Header from './landing page-components/Header';
-import HeroSection from './landing page-components/HeroSection';
-import Offers from './landing page-components/Offers';
+import About from '../Components/Landing page/AboutSection';
+import Contact from '../Components/Landing page/Contact';
+import FAQ from '../Components/Landing page/FAQ';
+import Footer from '../Components/Landing page/Footer';
+import Header from '../Components/Landing page/Header';
+import HeroSection from '../Components/Landing page/HeroSection';
+import Offers from '../Components/Landing page/Offers';
 
 const LandingPage = () => {
   return (

@@ -2,7 +2,7 @@ import styles from '../styles/ForgetPassword.module.css';
 import arrow from '../assets/arrow-left.png';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import MailCheck from './CheckMail';
+import MailCheck from '../Components/CheckMail';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');

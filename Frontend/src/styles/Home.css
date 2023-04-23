@@ -1,0 +1,12 @@
+.Home {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: rgb(243, 238, 238, 0.6);
+
+}
+
+.homeContainer {
+    flex: 6;
+    /* margin-left: 23px; */
+}
