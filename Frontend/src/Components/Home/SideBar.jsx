@@ -1,6 +1,6 @@
 import '../../styles/Sidebar.css';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.png';
 import Dasboardsvg from '../svg/dashboard';
 import Walletsvg from '../svg/wallet';
 import Savingsvg from '../svg/savings';
