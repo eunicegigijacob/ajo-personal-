@@ -6,8 +6,6 @@ import {
   Bar,
   XAxis,
   Tooltip,
-  CartesianGrid,
-  Legend,
   YAxis,
 } from 'recharts';
 import { SavingsData } from '../../assets/Dummy data/Data.js';
@@ -21,11 +19,15 @@ const Barchart = () => {
             data={SavingsData}
             margin={{ top: 10, left: 20, right: 20, bottom: 10 }}
           >
-            {/* <CartesianGrid strokeDasharray="3 3" /> */}
             <XAxis dataKey="Month" stroke="#2A5C99" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="Amount" stroke="#2A5C99" fill="#2A5C99" />
+            <Bar
+              dataKey="Amount"
+              stroke="#2A5C99"
+              fill="#2A5C99"
+              radius={[5, 5, 0, 0]}
+            />
           </BarChart>
         </ResponsiveContainer>
       </div>

@@ -2,6 +2,7 @@ import styles from '../../styles/Dashboard.module.css';
 import CloudIcon from '../svg/cloud';
 import PlusIcon from '../svg/plus';
 import Barchart from './Barchart';
+import Table from './Table';
 import Widgets from './Widgets';
 
 const Dashboard = () => {
@@ -26,6 +27,10 @@ const Dashboard = () => {
         <div className={styles.left}>
           <Widgets />
           <Barchart />
+          <div className={styles.listContainer}>
+            <div className={styles.listTitle}>Recent Transactions</div>
+            <Table />
+          </div>
         </div>
         <div className={styles.right}>
           <p>Notificatons</p>
