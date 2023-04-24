@@ -1,4 +1,4 @@
-import syles from '../../styles/Sidebar.module.css';
+import styles from '../../styles/Sidebar.module.css';
 
 import logo from '../../assets/Logo.png';
 import Dasboardsvg from '../svg/dashboard';
@@ -8,27 +8,27 @@ import Feedsvg from '../svg/tips';
 
 const SideBar = () => {
   return (
-    <div className="Sidebar">
-      <div className="logo">
-        <img src={logo} alt="logo" className="homelogo" />
+    <div className={styles.Sidebar}>
+      <div className={styles.logo}>
+        <img src={logo} alt="logo" className={styles.homelogo} />
       </div>
-      <div className="items">
-        <ul className="list">
-          <li className="item">
+      <div className={styles.items}>
+        <ul className={styles.list}>
+          <li className={styles.item}>
             <Dasboardsvg />
-            <span className="text">Dasboard</span>
+            <span className={styles.text}>Dasboard</span>
           </li>
-          <li className="item">
+          <li className={styles.item}>
             <Walletsvg />
-            <span className="text"> Wallet </span>
+            <span className={styles.text}> Wallet </span>
           </li>
-          <li className="item">
+          <li className={styles.item}>
             <Savingsvg />
-            <span className="text">Savings</span>
+            <span className={styles.text}>Savings</span>
           </li>
-          <li className="item">
+          <li className={styles.item}>
             <Feedsvg />
-            <span className="text">Feed</span>
+            <span className={styles.text}>Feed</span>
           </li>
         </ul>
       </div>

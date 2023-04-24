@@ -6,9 +6,9 @@ import Dashboard from '../Components/Home/Dashboard';
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div className={styles.Home}>
       <SideBar />
-      <div className="homeContainer">
+      <div className={styles.homeContainer}>
         <Navbar />
         <Dashboard />
       </div>

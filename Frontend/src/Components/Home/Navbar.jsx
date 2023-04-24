@@ -5,17 +5,25 @@ import user from '../../assets/user.jpg';
 
 const Navbar = () => {
   return (
-    <div className="Navbar">
-      <div className="wrapper">
-        <h3 className="active">Dashboard</h3>
-        <div className="search">
+    <div className={styles.Navbar}>
+      <div className={styles.wrapper}>
+        <h3 className={styles.active}>Dashboard</h3>
+        <div className={styles.search}>
           <Searchicon />
-          <input type="text" placeholder="Search..." className="searchInput" />
+          <input
+            type="text"
+            placeholder="Search..."
+            className={styles.searchInput}
+          />
         </div>
-        <div className="user">
-          <img src={user} alt="profile image of user" className="avatar" />
+        <div className={styles.user}>
+          <img
+            src={user}
+            alt="profile image of user"
+            className={styles.avatar}
+          />
           <p>
-            <span className="user_name">Eunice J</span>
+            <span className={styles.user_name}>Eunice J</span>
           </p>
         </div>
       </div>
