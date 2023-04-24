@@ -22,7 +22,9 @@ const Dashboard = () => {
         </div>
       </div>
       <div className={styles.main}>
-        <div className={styles.left}>{/* <Widgets /> */}</div>
+        <div className={styles.left}>
+          <Widgets />
+        </div>
         <div className={styles.right}>
           <p>Notificatons</p>
         </div>
