@@ -18,9 +18,9 @@ const ChartIcon = () => {
       <path
         d="M1 65C17.0544 58.9382 22.2938 35.6316 38.6667 33C53.7617 30.5738 61.3493 52.9402 76.3333 49C94.5042 44.2218 95.6411 2.73299 114 1"
         stroke="#12B76A"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -31,8 +31,8 @@ const ChartIcon = () => {
           y2="65"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.641167" stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="white" />
+          <stop offset="0.641167" stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>
